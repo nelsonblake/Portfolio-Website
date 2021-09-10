@@ -61,6 +61,10 @@ img {
   justify-content: space-between;
   padding-top: 1rem;
 
+  img {
+    cursor: pointer;
+  }
+
   ul {
     display: flex;
   }

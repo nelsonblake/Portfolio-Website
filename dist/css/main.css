@@ -242,6 +242,9 @@ img {
   justify-content: space-between;
   padding-top: 1rem;
 }
+#main-nav img {
+  cursor: pointer;
+}
 #main-nav ul {
   display: flex;
 }
