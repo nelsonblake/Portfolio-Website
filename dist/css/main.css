@@ -506,6 +506,7 @@ img {
   text-align: center;
   padding: 0.5rem;
   transition: all 1s;
+  cursor: pointer;
 }
 #main-footer .footer-content .social .fab:hover {
   background: #2098dd;
