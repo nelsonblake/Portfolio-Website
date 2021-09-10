@@ -242,9 +242,6 @@ img {
   justify-content: space-between;
   padding-top: 1rem;
 }
-#main-nav img {
-  cursor: pointer;
-}
 #main-nav ul {
   display: flex;
 }
@@ -264,6 +261,9 @@ img {
 }
 #main-nav a.current {
   border-color: #2098dd;
+}
+#main-nav a img {
+  border: none;
 }
 
 #header-home {
