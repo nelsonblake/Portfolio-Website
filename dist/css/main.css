@@ -459,6 +459,8 @@ img {
 }
 #contact-a .text-fields div {
   align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 #contact-a button[type=submit] {
   width: 50%;
