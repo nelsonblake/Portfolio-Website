@@ -262,9 +262,6 @@ img {
 #main-nav a.current {
   border-color: #2098dd;
 }
-#main-nav a img:hover {
-  border: none;
-}
 
 #header-home {
   background: url(../img/showcase2.jpg) no-repeat center right/cover;
