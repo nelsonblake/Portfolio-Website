@@ -262,7 +262,7 @@ img {
 #main-nav a.current {
   border-color: #2098dd;
 }
-#main-nav a img {
+#main-nav a img:hover {
   border: none;
 }
 
