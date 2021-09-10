@@ -457,6 +457,9 @@ img {
   outline-color: #2098dd;
   opacity: 0.8;
 }
+#contact-a .text-fields div {
+  align-items: center;
+}
 #contact-a button[type=submit] {
   width: 50%;
 }

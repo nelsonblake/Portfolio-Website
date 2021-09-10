@@ -356,6 +356,10 @@ img {
         outline-color: $main-color;
         opacity: 0.8;
       }
+
+      div {
+        align-items: center;
+      }
     }
 
     button[type='submit'] {
