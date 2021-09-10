@@ -1,0 +1,181 @@
+// Tablets and smaller
+@media (max-width: 800px) {
+  #header-home {
+    height: 30rem;
+
+    .header-content {
+      padding-top: 5rem;
+    }
+  }
+}
+
+// Smartphones
+@media (max-width: 600px) {
+  #main-nav {
+    flex-direction: column;
+    align-items: center;
+
+    li {
+      padding: 1rem;
+    }
+  }
+
+  // Adjust header size and picture position
+  #header {
+    &-home {
+      height: 10rem;
+      border-bottom: 3px solid $main-color;
+      background-position: 20% 30%;
+
+      // Dont dislay typewriter and button
+      .header-content {
+        display: none;
+      }
+    }
+
+    // inner pages match header on home
+    &-inner {
+      height: 10rem;
+    }
+  }
+
+  // Stack Grid Columns
+  #home-a .specials,
+  #home-b .stats,
+  #home-c .process,
+  #about-d .testimonials,
+  .items,
+  #contact-b .contact-info {
+    grid-template-columns: 1fr;
+  }
+
+  // home page
+  #home {
+    &-a {
+      // add border to the bottom to make more distinct
+      .specials div {
+        border-bottom: 1px $medium-color solid;
+        padding-bottom: 1rem;
+
+        &:last-child {
+          border: none;
+          padding-bottom: 0;
+        }
+      }
+    }
+
+    &-b {
+      //Remove some padding
+      .stats div {
+        padding: 2rem 0 1rem 0;
+      }
+    }
+  }
+
+  // About
+  #about {
+    &-a {
+      .about-info {
+        grid-template-areas:
+          'bioimage'
+          'bio'
+          'aw1'
+          'aw2'
+          'aw3';
+      }
+    }
+
+    &-c {
+      display: none;
+    }
+  }
+
+  // Contact
+  #contact {
+    &-a {
+      .text-fields {
+        grid-template-areas:
+          'name'
+          'subject'
+          'email'
+          'phone'
+          'message';
+      }
+    }
+    &-b {
+      div {
+        border-bottom: 1px solid #555;
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+
+        &:last-child {
+          border: none;
+          margin-bottom: 0;
+          padding-bottom: 0;
+        }
+      }
+    }
+
+    &-c {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  // Footer
+  #main-footer {
+    // Change height and flex
+    height: 7rem;
+
+    .footer-content {
+      flex-direction: column;
+      padding: 1rem;
+      height: 5rem;
+    }
+  }
+}
+
+// reduce distance between nav buttons on thin screen
+@media (max-width: 320px) {
+  #main-nav li {
+    padding: 0.65rem;
+  }
+}
+
+// Landscape
+@media (max-height: 580px) {
+  #header-home {
+    .header-content {
+      padding-top: 3rem;
+    }
+  }
+  #about {
+    &-c {
+      padding: 2rem 0;
+    }
+
+    &-d {
+      padding-top: 2rem;
+    }
+  }
+}
+
+@media (max-height: 414px) {
+  #header-home {
+    .header-content {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+  #about {
+    &-c {
+      padding: 2rem 0;
+    }
+
+    &-d {
+      padding-top: 2rem;
+    }
+  }
+}
